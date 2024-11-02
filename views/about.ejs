@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("head")%>
+<body>
+    <%- include("header")%>
+    <p>About  <%= username%></p>
+    <%if(isadmin) {%>
+        <h1><%= email%></h1>
+    <% }else{ %>
+        <p>Not an admin</p>
+   <% } %>
+</body>
+</html>
